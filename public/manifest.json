@@ -1,6 +1,6 @@
 {
-  "short_name": "UI Builder",
-  "name": "UI Builder",
+  "short_name": "App",
+  "name": "My App",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
