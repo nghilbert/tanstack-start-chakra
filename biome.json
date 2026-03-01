@@ -1,7 +1,7 @@
 {
 	"linter": {
 		"enabled": true,
-		"rules": { "recommended": true, "noImplicitWhitespace": "off" }
+		"rules": { "recommended": true }
 	},
 	"formatter": {
 		"enabled": true,
