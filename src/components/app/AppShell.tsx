@@ -2,7 +2,7 @@ import { Box, Drawer, Flex, IconButton, useDisclosure } from "@chakra-ui/react";
 import { Outlet } from "@tanstack/react-router";
 import { Menu } from "lucide-react";
 
-export function RootLayout() {
+export function AppShell() {
 	const { open, onToggle, onClose } = useDisclosure();
 
 	return (

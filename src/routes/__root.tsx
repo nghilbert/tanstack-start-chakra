@@ -1,6 +1,6 @@
 import { Button, Center, Heading, Text, VStack } from "@chakra-ui/react";
 import { createRootRoute, HeadContent, Link, Scripts } from "@tanstack/react-router";
-import { Providers, RootLayout } from "#/app";
+import { AppProviders, AppShell } from "#/components/app";
 
 export const Route = createRootRoute({
 	component: RootDocument,
@@ -20,9 +20,9 @@ function RootDocument() {
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			</head>
 			<body>
-				<Providers>
-					<RootLayout />
-				</Providers>
+				<AppProviders>
+					<AppShell />
+				</AppProviders>
 				<Scripts />
 			</body>
 		</html>
