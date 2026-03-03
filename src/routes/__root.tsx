@@ -1,6 +1,6 @@
 import { Button, Center, Heading, Text, VStack } from "@chakra-ui/react";
-import { createRootRoute, HeadContent, Link, Scripts } from "@tanstack/react-router";
-import { AppProviders, AppShell } from "#/components/app";
+import { createRootRoute, HeadContent, Link, Outlet, Scripts } from "@tanstack/react-router";
+import { AppProviders, AppShell } from "#/app";
 
 export const Route = createRootRoute({
 	component: RootDocument,
@@ -21,7 +21,9 @@ function RootDocument() {
 			</head>
 			<body>
 				<AppProviders>
-					<AppShell />
+					<AppShell>
+						<Outlet />
+					</AppShell>
 				</AppProviders>
 				<Scripts />
 			</body>

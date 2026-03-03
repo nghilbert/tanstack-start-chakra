@@ -1,8 +1,8 @@
 import { Box, Drawer, Flex, IconButton, useDisclosure } from "@chakra-ui/react";
-import { Outlet } from "@tanstack/react-router";
 import { Menu } from "lucide-react";
+import type { ReactNode } from "react";
 
-export function AppShell() {
+export function AppShell({ children }: { children: ReactNode }) {
 	const { open, onToggle, onClose } = useDisclosure();
 
 	return (
@@ -40,7 +40,7 @@ export function AppShell() {
 
 			{/* Main Content */}
 			<Box as="main" flex={1} overflow="hidden">
-				<Outlet />
+				{children}
 			</Box>
 		</Flex>
 	);
